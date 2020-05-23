@@ -45,6 +45,10 @@ Run docker without sudo:
     sudo usermod -aG docker ${USER}
     su - ${USER}
 
+Per [this issue](https://github.com/docker/compose/issues/6678), install haveged:
+
+    sudo apt-get install haveged
+
 ### Install docker-compose
 
 Following the Linux steps here from https://docs.docker.com/compose/install/:
