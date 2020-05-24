@@ -15,7 +15,7 @@ Following https://www.digitalocean.com/community/tutorials/initial-server-setup-
 
     su - deployer
     sudo cp -r /root/.ssh ~/.ssh
-    sudo chown -r deployer .ssh/
+    sudo chown -R deployer .ssh/
 
 * At this point you can sign out as `root` and sign in as `deployer`.
 
