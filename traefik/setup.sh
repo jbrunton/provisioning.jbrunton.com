@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+# Script based on https://dockerswarm.rocks/traefik/
+
 docker network create --driver=overlay traefik-public
 export NODE_ID=$(docker info -f '{{.Swarm.NodeID}}')
 echo "NODE_ID=$NODE_ID"
